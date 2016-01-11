@@ -1,159 +1,162 @@
 extends layout
 block link
-   link(href='css/style.css',rel='stylesheet')
-   <!--[if gt IE 6]>
-   link(href='css/style_ie.css',rel='stylesheet')
-   <![endif]-->
+    link(href='css/style.css',rel='stylesheet')
+    <!--[if gt IE 6]>
+    link(href='css/style_ie.css',rel='stylesheet')
+    <![endif]-->
 block title
-   title school
+    title school
 block header
-   .f_header
-      .container
-         .row.m_nav
-            .col-lg-2.col-md-2
-               h1.logo: a(href="/")
-                  img(src="img/logo.png" alt="logo" title="logo")
-            .col-lg-4.col-md-4
-               ul.nav.nav-pills
-                  li: a(href='/') 首页
-                  li: a(href='#') 相册
-                  li: a(href='#') 关于
-                  li: a(href='#') 留言
-                  li: a(href='#') 论坛
-            .col-lg-6.col-md-6
-               .nav_btn
-                  a.btn.sign_volunteers(href='#') 志愿者报名
-                  a.btn.sign_school(href='#') 学校报名
-   .f_banner
-      .m_banner
-         img(src="img/banner.jpg" alt="banner" title="banner")
-         .container.banner_main
-            p 2016年度支教志愿者招募
-   .f_main
-      .container
-         .row
-            .col-lg-8.col-md-4
-               .m_about
-                  h2 关于我们
-                     small About us
-                  strong 中国•支教联盟(CNAEF)
-                  p
-                     |创办于2006年4月。由自愿支持农村中小学教育的社会各界爱心人士自发组织的全国性民间公益机构。
-                     |以联系和提供支教为主题，主要发布支教信息，传播贫困地区教育现状，共同关注孩子成长。
-                     |自成立以来，长期致力于为发达地区爱心咨询寻找资助对象，为欠发达地区教育引入社会各界力量。
-               .row.m_news
-                  h2 支教快讯
-                     small Volunteer news
-                  .news_title
-                     .col-lg-6.col-md-6.notice
-                        img(src="img/notice.jpg" alt="notice" title="notice")
-                     .col-lg-6.col-md-6.log
-                        img(src="img/log.jpg" alt="log" title="log")
-                  .news_main
-                     ul.notice_main
-                        li
-                           h5: a(href='#') 不再有人因为贫穷而失学
-                              small - 3天前
-                           p: a(href='#') 由自愿支持农村中小学教育的社会各界爱心人士自发组织的全国性民间公益机构...
-                        li
-                           h5: a(href='#') 不再有人因为闭塞而绝望
-                              small - 3个月前
-                           p: a(href='#') 由自愿支持农村中小学教育的社会各界爱心人士自发组织的全国性民间公益机构...
-                        li
-                           h5: a(href='#') 不再有人因为贫穷而失学
-                              small - 3天前
-                           p: a(href='#') 由自愿支持农村中小学教育的社会各界爱心人士自发组织的全国性民间公益机构...
-                     ul.log_main
-                        li
-                           h5: a(href='#') 不再有人因为贫穷而失学
-                              small - 3天前
-                           p: a(href='#') 由自愿支持农村中小学教育的社会各界爱心人士自发组织的全国性民间公益机构...
-                        li
-                           h5: a(href='#') 不再有人因为闭塞而绝望
-                              small - 3个月前
-                           p: a(href='#') 由自愿支持农村中小学教育的社会各界爱心人士自发组织的全国性民间公益机构...
-                        li
-                           h5: a(href='#') 不再有人因为贫穷而失学
-                              small - 3天前
-                           p: a(href='#') 由自愿支持农村中小学教育的社会各界爱心人士自发组织的全国性民间公益机构...
-            .col-lg-4.col-md-4
-               .m_weibo
-                  h2 新浪微博
-                     small Sina Weibo
-   .f_map
-      .container
-         .row
-            .col-lg-12.col-md-12
-               h2 支教足迹
-                  small Volunteer footprint
-      .m_map
-         img(src="img/map.jpg" alt="支教足迹" title="支教足迹")
-   .f_picture
-      .container
-         h2 支教掠影
-            small Volunteer picture
-         .row
-            .col-lg-4.col-md-4
-               .row
-                  .col-lg-12.col-md-12
-                     img(src="img/pic01.jpg" alt="picture" title="picture")
-            .col-lg-8.col-md-8
-               .row
-                  .col-lg-3.col-md-3
-                     img(src="img/pic02.jpg" alt="picture" title="picture")
-                  .col-lg-3.col-md-3
-                     img(src="img/pic03.jpg" alt="picture" title="picture")
-                  .col-lg-3.col-md-3
-                     img(src="img/pic04.jpg" alt="picture" title="picture")
-                  .col-lg-3.col-md-3
-                     img(src="img/pic05.jpg" alt="picture" title="picture")
-               .row
-                  .col-lg-3.col-md-3
-                     img(src="img/pic06.jpg" alt="picture" title="picture")
-                  .col-lg-3.col-md-3
-                     img(src="img/pic07.jpg" alt="picture" title="picture")
-                  .col-lg-3.col-md-3
-                     img(src="img/pic08.jpg" alt="picture" title="picture")
-                  .col-lg-3.col-md-3
-                     img(src="img/pic09.jpg" alt="picture" title="picture")
-   .f_footer
-      .container
-         .row
-            .col-lg-3.col-md-3
-               h3 友情链接
-                  small friendly link
-               ul
-                  li: a(href='#') ·庐阳教育论坛
-                  li: a(href='#') ·滴水公益论坛
-                  li: a(href='#') ·四川仁爱医疗基金会
-                  li: a(href='#') ·成都抗癌协会
-                  li: a(href='#') ·进藏教师家园
-                  li: a(href='#') ·米公益
-            .col-lg-3.col-md-3
-               h3 相关链接
-                  small Relevant
-               ul
-                  li: a(href='#') ·论坛
-                  li: a(href='#') ·博客
-                  li: a(href='#') ·微博
-                  li: a(href='#') ·豆瓣小站
-                  li: a(href='#') ·豆瓣小组
-                  li: a(href='#') ·人人小站
-                  li: a(href='#') ·人人主页
-                  li: a(href='#') ·百度贴吧
-            .col-lg-3.col-md-3
-               h3 联系方式
-                  small Contact information
-               ul
-                  li: a(href='mailto:admin@go9999.com') 邮箱：admin@go9999.com
-                  li QQ群：1234567890
-                  li: a(href='#') 新浪微博：@中国支教联盟网站
-                  li: a(href='#') 新浪微博：@年小恩
-                  li 微信：CNAEF
-         .row
-            .col-lg-6.col-md-6
-               .copyright
-                  p Copyright ©2005-2015 Go9999.com All Rights Reserved.
-            .col-lg-6.col-md-6
-               .icp
-                  p 浙ICP备12032988号-1
+    .f_header
+        .container
+            .row.m_nav
+                .col-lg-2.col-md-2
+                    h1.logo: a(href="/")
+                        img(src="img/logo.png",alt="logo",title="logo")
+                .col-lg-4.col-md-4
+                    ul.nav.nav-pills
+                        li: a(href='/') 首页
+                        li: a(href='#') 相册
+                        li: a(href='#') 关于
+                        li: a(href='#') 留言
+                        li: a(href='#') 论坛
+                .col-lg-6.col-md-6
+                    .nav_btn
+                        a.btn.sign_volunteers(href='#') 志愿者报名
+                        a.btn.sign_school(href='#') 学校报名
+    .f_banner
+        .m_banner
+            //-img(src="img/banner.jpg",alt="banner",title="banner")
+            .container.banner_main
+                p 2016年度支教志愿者招募
+    .f_main
+        .container
+            .row
+                .col-lg-8.col-md-4
+                    .m_about
+                        h2 关于我们
+                            small About us
+                        strong 中国•支教联盟(CNAEF)
+                        p.
+                            创办于2006年4月。由自愿支持农村中小学教育的社会各界爱心人士自发组织的全国性民间公益机构。
+                            以联系和提供支教为主题，主要发布支教信息，传播贫困地区教育现状，共同关注孩子成长。
+                            自成立以来，长期致力于为发达地区爱心咨询寻找资助对象，为欠发达地区教育引入社会各界力量。
+                    .m_news
+                        h2 支教快讯
+                            small Volunteer news
+                        .row.news_title
+                            .col-lg-6.col-md-6.notice
+                                img(src="img/notice.jpg" alt="notice" title="notice")
+                            .col-lg-6.col-md-6.log
+                                img(src="img/log.jpg" alt="log" title="log")
+                        .news_main
+                            - var text='由自愿支持农村中小学教育的社会各界爱心人士自发组织的全国性民间公益机构...'
+                            ul.notice_main
+                                li
+                                    h5: a(href='#') 不再有人因为贫穷而失学
+                                        small - 3天前
+                                    p: a(href='#') #{text}
+
+                                li
+                                    h5: a(href='#') 不再有人因为闭塞而绝望
+                                        small - 3个月前
+                                    p: a(href='#') #{text}
+                                li
+                                    h5: a(href='#') 不再有人因为贫穷而失学
+                                        small - 3天前
+                                    p: a(href='#') #{text}
+                            ul.log_main
+                                li
+                                    h5: a(href='#') 不再有人失学
+                                        small - 3天前
+                                    p: a(href='#') #{text}
+                                li
+                                    h5: a(href='#') 不再有人绝望
+                                        small - 3个月前
+                                    p: a(href='#') #{text}
+                                li
+                                    h5: a(href='#') 不再有人失学
+                                        small - 3天前
+                                    p: a(href='#') #{text}...
+                .col-lg-4.col-md-4
+                    .m_weibo
+                        h2 新浪微博
+                            small Sina Weibo
+    .f_map
+        .container
+            .row
+                .col-lg-12.col-md-12
+                    h2 支教足迹
+                        small Volunteer footprint
+        .m_map
+            img(src="img/map.jpg" alt="支教足迹" title="支教足迹")
+    .f_picture
+        .container
+            h2 支教掠影
+                small Volunteer picture
+            .row
+                .col-lg-4.col-md-4
+                    .row
+                        .col-lg-12.col-md-12
+                            img(src="img/pic01.jpg" alt="picture" title="picture")
+                .col-lg-8.col-md-8
+                    .row
+                        .col-lg-3.col-md-3
+                            img(src="img/pic02.jpg" alt="picture" title="picture")
+                        .col-lg-3.col-md-3
+                            img(src="img/pic03.jpg" alt="picture" title="picture")
+                        .col-lg-3.col-md-3
+                            img(src="img/pic04.jpg" alt="picture" title="picture")
+                        .col-lg-3.col-md-3
+                            img(src="img/pic05.jpg" alt="picture" title="picture")
+                    .row
+                        .col-lg-3.col-md-3
+                            img(src="img/pic06.jpg" alt="picture" title="picture")
+                        .col-lg-3.col-md-3
+                            img(src="img/pic07.jpg" alt="picture" title="picture")
+                        .col-lg-3.col-md-3
+                            img(src="img/pic08.jpg" alt="picture" title="picture")
+                        .col-lg-3.col-md-3
+                            img(src="img/pic09.jpg" alt="picture" title="picture")
+    .f_footer
+        .container
+            .row
+                .col-lg-3.col-md-3
+                    h3 友情链接
+                        small friendly link
+                    ul
+                        li: a(href='#') 庐阳教育论坛
+                        li: a(href='#') 滴水公益论坛
+                        li: a(href='#') 四川仁爱医疗基金会
+                        li: a(href='#') 成都抗癌协会
+                        li: a(href='#') 进藏教师家园
+                        li: a(href='#') 米公益
+                .col-lg-3.col-md-3
+                    h3 相关链接
+                        small Relevant
+                    ul
+                        li: a(href='#') 论坛
+                        li: a(href='#') 博客
+                        li: a(href='#') 微博
+                        li: a(href='#') 豆瓣小站
+                        li: a(href='#') 豆瓣小组
+                        li: a(href='#') 人人小站
+                        li: a(href='#') 人人主页
+                        li: a(href='#') 百度贴吧
+                .col-lg-3.col-md-3
+                    h3 联系方式
+                        small Contact information
+                    ul
+                        li: a(href='mailto:admin@go9999.com') 邮箱：admin@go9999.com
+                        li QQ群：1234567890
+                        li: a(href='#') 新浪微博：@中国支教联盟网站
+                        li: a(href='#') 新浪微博：@年小恩
+                        li 微信：CNAEF
+                .col-lg-3.col-md-3
+                    .qr
+                        img(src="img/qr.jpg" alt="二维码" title="二维码")
+            .version
+                .copyright
+                    p Copyright ©2005-2015 Go9999.com All Rights Reserved.
+                .icp
+                    p: a(href='#') 浙ICP备12032988号-1
