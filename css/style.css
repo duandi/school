@@ -74,10 +74,9 @@ a:hover {
   position: absolute;
   left: 50%;
   width: 640px;
-  padding-top: 185px;
+  padding-top: 115px;
   margin-left: -320px;
   text-align: center;
-  background: url("../img/banner_logo.png") no-repeat center 80px;
 }
 .f_banner .m_banner .banner_main p {
   color: #fff;
@@ -123,6 +122,8 @@ a:hover {
 }
 .m_map {
   text-align: center;
+  height: 370px;
+  background: url("../img/map.gif") no-repeat center top;
 }
 .f_picture img {
   margin-bottom: 20px;
@@ -174,4 +175,62 @@ a:hover {
 }
 .f_footer .icp {
   float: right;
+}
+@media (min-width: 768px) {
+  .f_header .nav {
+    margin-top: 34px;
+  }
+  .f_header .nav_btn .btn {
+    line-height: 2em;
+    padding: 0 10px;
+    font-size: 0.75em;
+  }
+  .f_picture img {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .f_banner .m_banner .banner_main {
+    position: initial;
+    width: auto;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .f_header h1 {
+    text-align: center;
+  }
+  .f_header h1 img {
+    display: inline;
+  }
+  .f_header .nav {
+    margin: 0;
+    text-align: center;
+  }
+  .f_header .nav li {
+    float: none;
+    display: inline-block;
+  }
+  .f_header .nav li a {
+    padding: 0 8px 15px;
+  }
+  .f_header .nav_btn {
+    float: none;
+    padding: 0 0 15px;
+    text-align: center;
+  }
+  .f_footer {
+    margin-top: 0;
+  }
+  .f_footer .copyright {
+    float: none;
+  }
+  .f_footer .copyright p {
+    font-size: 12px;
+  }
+  .f_footer .icp {
+    float: none;
+  }
+  .f_footer .icp p {
+    font-size: 12px;
+  }
 }

@@ -79,10 +79,10 @@ a:hover
       position absolute
       left 50%
       width 640px
-      padding-top 185px
+      padding-top 115px
       margin-left: -(@width / 2)
       text-align center
-      background url(../img/banner_logo.png) no-repeat center 80px
+      //-background url(../img/banner_logo.png) no-repeat center 80px
       p
         color btncolor
         font-size 280%
@@ -124,7 +124,8 @@ a:hover
 
 .m_map
   text-align center
-
+  height 370px
+  background url("../img/map.gif") no-repeat center top
 .f_picture
   img
     margin-bottom 20px
@@ -168,6 +169,48 @@ a:hover
   .icp
     float right
 
+@media (min-width: 768px)
+  .f_header .nav
+    margin-top 34px
+  .f_header .nav_btn .btn
+    line-height 2em
+    padding 0 10px
+    font-size 0.75em
+  .f_picture img
+    margin-bottom 30px
+@media (max-width: 768px)
+  .f_banner .m_banner .banner_main
+    position initial
+    width auto
+    margin 0 auto;
+    font-size 10px
+  .f_header
+    h1
+      text-align center
+      img
+        display inline
+    .nav
+      margin 0
+      text-align center
+      li
+        float none
+        display inline-block
+        a
+          padding 0 8px 15px
+    .nav_btn
+      float none
+      padding 0 0 15px
+      text-align center
+  .f_footer
+    margin-top 0
+    .copyright
+      float none
+      p
+        font-size 12px
+    .icp
+      float none
+      p
+        font-size 12px
 
 
 
